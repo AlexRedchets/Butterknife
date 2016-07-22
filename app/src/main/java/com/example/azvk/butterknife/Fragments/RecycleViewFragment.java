@@ -26,7 +26,7 @@ import butterknife.ButterKnife;
 
 public class RecycleViewFragment extends Fragment{
 
-    @BindView(R.id.recycleView) private RecyclerView recyclerView;
+    @BindView(R.id.recycleView) RecyclerView recyclerView;
 
     private static final String TAG = RecycleViewFragment.class.getSimpleName();
     private RecycleViewAdapter adapter;

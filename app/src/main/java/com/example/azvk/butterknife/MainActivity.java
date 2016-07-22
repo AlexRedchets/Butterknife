@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar) private Toolbar toolbar;
+    @BindView(R.id.toolbar) Toolbar toolbar;
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        ButterKnife.setDebug(true);
 
         setSupportActionBar(toolbar);
 
